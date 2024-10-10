@@ -1,0 +1,17 @@
+
+7 Steps to fulfil an Appium TestCase:
+1.  Create test steps in feature file,
+2.  Create empty stepdefs in stepdefinition class,
+3.  Create empty Page classes are needed,
+4.  Fill the methods in StepDef class with page class object and methods
+5.  Create these methods on Page Class,
+6.  Fill the methods in Page Class with ReusableMethods,
+7.  Create mobileElement locators
+
+1.  Feature file'da test adımlarını oluştur.
+2.  Boş stepDef'leri StepDefs classlarında oluştur.
+3.  Gerekli Page classlarını Pages package altında oluştur.
+4.  StepDefs classındaki boş stepdefinitionların içini ilgili Page object kullanarak doldur.
+5.  Bir üst adımdaki methodları page class'ta oluştur.
+6.  Page class'taki methodları ReusableMethods kullanarak doldur.
+7.  Gerekli locatorları oluştur.
