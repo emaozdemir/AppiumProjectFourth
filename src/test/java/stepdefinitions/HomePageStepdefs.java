@@ -10,13 +10,16 @@ import utilities.DriverFactory;
 public class HomePageStepdefs {
 
     HomePage homePage = new HomePage(DriverFactory.getDriver());
-    GenderPage genderPage = new GenderPage(DriverFactory.getDriver());
 
 
     @Then("should see HomePage")
     public void shouldSeeHomePage() {
-        genderPage.clickWomenButton();
         // Write code to verify the HomePage is displayed here
+        homePage.verifyHomePageIsDisplayed();
+    }
+
+    @Given("user is on Home Page")
+    public void userIsOnHomePage() {
         homePage.verifyHomePageIsDisplayed();
     }
 
@@ -38,4 +41,6 @@ public class HomePageStepdefs {
         // Write code to verify the trendyolLogo is displayed here
         homePage.verifyTrendyolLogoIsDisplayed();
     }
+
+
 }

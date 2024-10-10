@@ -17,6 +17,7 @@ public class DriverFactory {
         options.setPlatformName("Android");
         options.setAutomationName("UiAutomator2");
 //        options.setUdid("emulator-5554");
+
         options.setAppPackage("trendyol.com");
         options.setAppActivity("com.trendyol.common.splash.impl.ui.SplashActivity");
         options.setNoReset(false);
